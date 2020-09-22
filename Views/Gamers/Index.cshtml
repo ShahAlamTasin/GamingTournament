@@ -1,0 +1,69 @@
+﻿@model IEnumerable<GameTournament.Models.Gamer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GamerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Passward)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InGameName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teamname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prefferedgame)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GamerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Passward)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InGameName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teamname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prefferedgame)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GamerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GamerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GamerId })
+        </td>
+    </tr>
+}
+
+</table>

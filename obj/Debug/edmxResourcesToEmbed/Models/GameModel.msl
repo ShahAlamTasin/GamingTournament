@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GameTournamentModelStoreContainer" CdmEntityContainer="GameTournamentEntities1">
+    <EntitySetMapping Name="Gamers">
+      <EntityTypeMapping TypeName="GameTournamentModel.Gamer">
+        <MappingFragment StoreEntitySet="Gamer">
+          <ScalarProperty Name="GamerId" ColumnName="GamerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Contactnum" ColumnName="Contactnum" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Ingamename" ColumnName="Ingamename" />
+          <ScalarProperty Name="Teamname" ColumnName="Teamname" />
+          <ScalarProperty Name="Preferredgame" ColumnName="Preferredgame" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

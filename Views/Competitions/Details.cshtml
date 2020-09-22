@@ -1,0 +1,98 @@
+﻿@model GameTournament.Models.Competition
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Competition</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizer.organizername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizer.organizername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.organizeremail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.organizeremail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalteams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalteams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Registrationfee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registrationfee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Registeredteams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registeredteams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.competitionpicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.competitionpicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tournamentdeadline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tournamentdeadline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discordserverlink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discordserverlink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.googleformlink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.googleformlink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Competitionid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

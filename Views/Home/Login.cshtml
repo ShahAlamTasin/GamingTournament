@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/css/style.css" />
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,900;1,200;1,400&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <div class="container-fluid px-0" style="background-color: azure;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner bg-info" role="listbox">
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-center min-vh-00" style="background-color: azure;">
+
+                        <img src="~/Content/image/pubg 1.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-center min-vh-00">
+                        <img src="~/Content/image/fortnite 1.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-center min-vh-00">
+                        <img src="~/Content/image/apexgroup.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4 text-center">
+
+        <h1> Welcome To Gaming Competition Notifier System </h1>
+        <div class="formdiv">
+            <form action="">
+                <label for="User">Login As:</label>
+                <select name="User " id="User">
+                    <option value="Gamer">Gamer</option>
+                    <option value="Organizer">Organizer</option>
+
+                </select>
+                <br><br>
+                <label for="fname">User Mail:</label><br>
+                <input type="Mail" id="User mail" name="User Mail" value=""><br>
+                <label for="lname">Passward:</label><br>
+                <input type="text" id="Userpass" name="Userpass" value=""><br><br>
+                <button class="Submit" style="background: transparent;">Submit  </button>
+                <button class="forgetpass" style="background: transparent;">Forget passward</button>
+                <br> <br>
+
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

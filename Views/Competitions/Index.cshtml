@@ -1,0 +1,87 @@
+﻿@model IEnumerable<GameTournament.Models.Competition>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Organizer.organizername)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.organizeremail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalteams)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Registrationfee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Registeredteams)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.competitionpicture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tournamentdeadline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discordserverlink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.googleformlink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Organizer.organizername)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.organizeremail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalteams)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Registrationfee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Registeredteams)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.competitionpicture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tournamentdeadline)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Discordserverlink)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.googleformlink)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Competitionid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Competitionid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Competitionid })
+        </td>
+    </tr>
+}
+
+</table>

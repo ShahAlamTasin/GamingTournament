@@ -1,0 +1,40 @@
+.formdiv{
+
+  margin-top: 10vh;
+  font-size: 30px;
+  font-weight: bold;
+}
+body {
+  animation: 10000ms ease-in-out infinite color-change;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: aqua;
+  }
+  20% {
+    background-color: cyan;
+  }
+  40% {
+    background-color: deepskyblue;
+  }
+  60% {
+    background-color: #00CED1;
+  }
+  80% {
+    background-color: #AFEEEE;
+  }
+  100% {
+    background-color: #B0E0E6;
+  }
+}
+
+.submit{
+
+	background-color: #7FFF00;
+	opacity: 0.1;
+}
+.submit:hover{
+	background-color: green; 
+	opacity: 1.0;
+}

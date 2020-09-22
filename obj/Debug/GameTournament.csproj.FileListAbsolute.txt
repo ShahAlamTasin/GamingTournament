@@ -1,0 +1,256 @@
+C:\Users\Admin\source\repos\GameTournament\bin\GameTournament.dll.config
+C:\Users\Admin\source\repos\GameTournament\bin\GameTournament.dll
+C:\Users\Admin\source\repos\GameTournament\bin\GameTournament.pdb
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\csc.exe
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\csc.exe.config
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\csc.rsp
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\csi.exe
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\csi.exe.config
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\csi.rsp
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Console.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\vbc.exe
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\vbc.exe.config
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\vbc.rsp
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\source\repos\GameTournament\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\source\repos\GameTournament\bin\Antlr3.Runtime.dll
+C:\Users\Admin\source\repos\GameTournament\bin\EntityFramework.dll
+C:\Users\Admin\source\repos\GameTournament\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Logging.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Options.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\source\repos\GameTournament\bin\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Buffers.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Collections.Immutable.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.ComponentModel.Annotations.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Memory.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Numerics.Vectors.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Helpers.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Mvc.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Optimization.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Razor.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.WebPages.dll
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\source\repos\GameTournament\bin\WebGrease.dll
+C:\Users\Admin\source\repos\GameTournament\bin\EntityFramework.xml
+C:\Users\Admin\source\repos\GameTournament\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.EntityFrameworkCore.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Logging.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Options.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Buffers.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Collections.Immutable.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Memory.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Numerics.Vectors.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Helpers.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Mvc.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Optimization.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.Razor.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.WebPages.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\source\repos\GameTournament\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\GameTournament\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\source\repos\GameTournament\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\source\repos\GameTournament\obj\Debug\GameTournament.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\GameTournament\obj\Debug\GameTournament.csproj.CopyComplete
+C:\Users\Admin\source\repos\GameTournament\obj\Debug\GameTournament.dll
+C:\Users\Admin\source\repos\GameTournament\obj\Debug\GameTournament.pdb
+C:\Users\Admin\source\repos\GameTournament\obj\Debug\GameTournament.csprojAssemblyReference.cache
+J:\3-2\sd lab\GameTournament\obj\Debug\GameTournament.csproj.CoreCompileInputs.cache
+J:\3-2\sd lab\GameTournament\bin\GameTournament.dll.config
+J:\3-2\sd lab\GameTournament\bin\GameTournament.dll
+J:\3-2\sd lab\GameTournament\bin\GameTournament.pdb
+J:\3-2\sd lab\GameTournament\bin\roslyn\csc.exe
+J:\3-2\sd lab\GameTournament\bin\roslyn\csc.exe.config
+J:\3-2\sd lab\GameTournament\bin\roslyn\csc.rsp
+J:\3-2\sd lab\GameTournament\bin\roslyn\csi.exe
+J:\3-2\sd lab\GameTournament\bin\roslyn\csi.exe.config
+J:\3-2\sd lab\GameTournament\bin\roslyn\csi.rsp
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.Managed.Core.targets
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\3-2\sd lab\GameTournament\bin\roslyn\Microsoft.Win32.Primitives.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.AppContext.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Collections.Immutable.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Console.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Diagnostics.StackTrace.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Globalization.Calendars.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.IO.Compression.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.IO.Compression.ZipFile.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.IO.FileSystem.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.IO.FileSystem.Primitives.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Net.Http.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Net.Sockets.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Reflection.Metadata.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Security.Cryptography.Encoding.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Security.Cryptography.Primitives.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Text.Encoding.CodePages.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Threading.Tasks.Extensions.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.ValueTuple.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Xml.ReaderWriter.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Xml.XmlDocument.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Xml.XPath.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\System.Xml.XPath.XDocument.dll
+J:\3-2\sd lab\GameTournament\bin\roslyn\vbc.exe
+J:\3-2\sd lab\GameTournament\bin\roslyn\vbc.exe.config
+J:\3-2\sd lab\GameTournament\bin\roslyn\vbc.rsp
+J:\3-2\sd lab\GameTournament\bin\roslyn\VBCSCompiler.exe
+J:\3-2\sd lab\GameTournament\bin\roslyn\VBCSCompiler.exe.config
+J:\3-2\sd lab\GameTournament\bin\Antlr3.Runtime.dll
+J:\3-2\sd lab\GameTournament\bin\EntityFramework.dll
+J:\3-2\sd lab\GameTournament\bin\EntityFramework.SqlServer.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Bcl.AsyncInterfaces.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Bcl.HashCode.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.EntityFrameworkCore.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Caching.Abstractions.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Caching.Memory.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Configuration.Binder.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Configuration.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.DependencyInjection.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Logging.Abstractions.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Logging.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Options.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Primitives.dll
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Web.Infrastructure.dll
+J:\3-2\sd lab\GameTournament\bin\Newtonsoft.Json.dll
+J:\3-2\sd lab\GameTournament\bin\System.Buffers.dll
+J:\3-2\sd lab\GameTournament\bin\System.Collections.Immutable.dll
+J:\3-2\sd lab\GameTournament\bin\System.ComponentModel.Annotations.dll
+J:\3-2\sd lab\GameTournament\bin\System.Diagnostics.DiagnosticSource.dll
+J:\3-2\sd lab\GameTournament\bin\System.Memory.dll
+J:\3-2\sd lab\GameTournament\bin\System.Numerics.Vectors.dll
+J:\3-2\sd lab\GameTournament\bin\System.Runtime.CompilerServices.Unsafe.dll
+J:\3-2\sd lab\GameTournament\bin\System.Threading.Tasks.Extensions.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.Helpers.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.Mvc.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.Optimization.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.Razor.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.WebPages.Deployment.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.WebPages.dll
+J:\3-2\sd lab\GameTournament\bin\System.Web.WebPages.Razor.dll
+J:\3-2\sd lab\GameTournament\bin\WebGrease.dll
+J:\3-2\sd lab\GameTournament\bin\EntityFramework.xml
+J:\3-2\sd lab\GameTournament\bin\EntityFramework.SqlServer.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Bcl.AsyncInterfaces.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Bcl.HashCode.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.EntityFrameworkCore.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Caching.Abstractions.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Caching.Memory.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Configuration.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Configuration.Binder.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.DependencyInjection.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Logging.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Logging.Abstractions.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Options.xml
+J:\3-2\sd lab\GameTournament\bin\Microsoft.Extensions.Primitives.xml
+J:\3-2\sd lab\GameTournament\bin\System.Buffers.xml
+J:\3-2\sd lab\GameTournament\bin\System.Collections.Immutable.xml
+J:\3-2\sd lab\GameTournament\bin\System.Diagnostics.DiagnosticSource.xml
+J:\3-2\sd lab\GameTournament\bin\System.Memory.xml
+J:\3-2\sd lab\GameTournament\bin\System.Numerics.Vectors.xml
+J:\3-2\sd lab\GameTournament\bin\System.Runtime.CompilerServices.Unsafe.xml
+J:\3-2\sd lab\GameTournament\bin\System.Threading.Tasks.Extensions.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.Helpers.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.Mvc.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.Optimization.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.Razor.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.WebPages.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.WebPages.Deployment.xml
+J:\3-2\sd lab\GameTournament\bin\System.Web.WebPages.Razor.xml
+J:\3-2\sd lab\GameTournament\bin\Newtonsoft.Json.xml
+J:\3-2\sd lab\GameTournament\bin\Antlr3.Runtime.pdb
+J:\3-2\sd lab\GameTournament\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\3-2\sd lab\GameTournament\obj\Debug\GameTournament.csproj.CopyComplete
+J:\3-2\sd lab\GameTournament\obj\Debug\GameTournament.dll
+J:\3-2\sd lab\GameTournament\obj\Debug\GameTournament.pdb
+J:\3-2\sd lab\GameTournament\obj\Debug\GameTournament.csprojAssemblyReference.cache

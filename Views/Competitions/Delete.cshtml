@@ -1,0 +1,104 @@
+﻿@model GameTournament.Models.Competition
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Competition</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizer.organizername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizer.organizername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.organizeremail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.organizeremail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalteams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalteams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Registrationfee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registrationfee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Registeredteams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registeredteams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.competitionpicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.competitionpicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tournamentdeadline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tournamentdeadline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discordserverlink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discordserverlink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.googleformlink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.googleformlink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
