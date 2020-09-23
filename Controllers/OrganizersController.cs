@@ -46,16 +46,16 @@ namespace GameTournament.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Organizerid,organizername,Organizeremail,organizercontactnum,Passward,rating")] Organizer organizer)
+        public ActionResult Create([Bind(Include = "")] Organizer organizer)
         {
             if (ModelState.IsValid)
             {
                 db.Organizer.Add(organizer);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Organizerprofileview", "Home", new { id = organizer.Organizerid });
             }
 
-            return View(organizer);
+            return View("~/Views/Home/OrganizerRegistration.cshtml", organizer);
         }
 
         // GET: Organizers/Edit/5
@@ -78,7 +78,7 @@ namespace GameTournament.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Organizerid,organizername,Organizeremail,organizercontactnum,Passward,rating")] Organizer organizer)
+        public ActionResult Edit([Bind(Include = "")] Organizer organizer)
         {
             if (ModelState.IsValid)
             {

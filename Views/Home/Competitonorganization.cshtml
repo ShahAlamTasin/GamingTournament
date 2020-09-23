@@ -1,4 +1,4 @@
-﻿
+﻿@model GameTournament.Models.Competition
 @{
     ViewBag.Title = "Competitonorganization";
     Layout = null;
@@ -78,64 +78,72 @@
                 </h1>
 
                 <div class="container">
-                    <form>
+
+
+                    <form action="@Url.Action("Create","Competitions")" method="POST" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
                         <div class="form-group">
                             <label for="fname">Competition Name  :</label>
-                            <input type="text" class="form-control" id="competitionameinput" aria-describedby="emailHelp" placeholder="Enter Name">
-
+                            <input type="text" class="form-control" name="CompetitionName" aria-describedby="emailHelp" placeholder="Enter Name">
+                            @Html.ValidationMessageFor(model => model.CompetitionName, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
-                            <label for="E-mail">Total Teams :</label>
-                            <input type="email" class="form-control" id="totalteamsinput" aria-describedby="emailHelp" placeholder="Enter total teams number">
-
-                        </div>
-
-
-
-                        <div class="form-group">
-                            <label for="OrganizerNumber">Registration fee:</label>
-                            <input type="tel" class="form-control" id="registrationfeeinput" aria-describedby="emailHelp" placeholder=" enter registration fee ">
-
+                            @Html.LabelFor(model => model.Organizerid, "Organizer id", htmlAttributes: new { @class = "" })
+                            @Html.DropDownList("Organizerid", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Organizerid, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
-                            <label for="lname">Game Name :</label>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="gamename" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Apex</a>
-                                    <a class="dropdown-item" href="#">Valorant</a>
-                                    <a class="dropdown-item" href="#">Pubgm</a>
-                                    <a class="dropdown-item" href="#">Fortnite</a>
+                            <label for="OrganizerNumber">Tournament deadline :</label>
+                            <input type="date" class="form-control" name="tournamentdeadline" aria-describedby="emailHelp" placeholder=" enter registration fee ">
+                            @Html.ValidationMessageFor(model => model.tournamentdeadline, "", new { @class = "text-danger" })
+                        </div>
 
-                                </div>
+                        <div class="form-group">
+                            <label for="OrganizerNumber">Total Team :</label>
+                            <input type="number" class="form-control" name="totalteams" aria-describedby="emailHelp" placeholder=" enter registration fee ">
+                            @Html.ValidationMessageFor(model => model.totalteams, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="OrganizerNumber">Registation Fee :</label>
+                            <input type="number" class="form-control" name="Registrationfee" aria-describedby="emailHelp" placeholder=" enter registration fee ">
+                            @Html.ValidationMessageFor(model => model.Registrationfee, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-group">
+                                <select name="GameName" id="Prefferedgame">
+                                    <option value="Apex">Apex</option>
+                                    <option value="Pubg Mobile">Pubg Mobile</option>
+                                    <option value="Valorent">Valorent</option>
+                                    <option value="Fortnite">Fortnite</option>
+                                </select>
+                                @Html.ValidationMessageFor(model => model.GameName, "", new { @class = "text-danger" })
                             </div>
 
                         </div>
                         <div class="form-group">
                             <label for="lname">Google Form Link :</label>
-                            <input type="text" class="form-control" id="googleformlinkinput" aria-describedby="emailHelp" placeholder="enter google form link">
-
+                            <input type="url" class="form-control" name="googleformlink" id="googleformlinkinput" aria-describedby="emailHelp" placeholder="enter google form link">
+                            @Html.ValidationMessageFor(model => model.googleformlink, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
                             <label for="lname">Discord Server Link :</label>
-                            <input type="text" class="form-control" id="competitionserverlinkinput" aria-describedby="emailHelp" placeholder="enter discord server link">
-                            <small id="PasswardHelp" class="form-text text-muted">We'll share your Discord server Link with Gamers</small>
+                            <input type="url" class="form-control" name="Discordserverlink" id="competitionserverlinkinput" aria-describedby="emailHelp" placeholder="enter discord server link">
+                            @Html.ValidationMessageFor(model => model.Discordserverlink, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
-                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile" accept="image/*">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="imageFile" id="customFile" accept="image/*">
                                 <label class="custom-file-label" for="customFile">Choose file</label>
                             </div>
 
 
                             <script>
-                                // Add the following code if you want the name of the file appear on select
                                 $(".custom-file-input").on("change", function () {
                                     var fileName = $(this).val().split("\\").pop();
                                     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
@@ -144,16 +152,8 @@
                         </div>
 
 
-
-
-                       
-
-
                         <div class="text-center mb-2">
-                            <a href="">
-                                <button type="submit" class="btn btn-primary px-4 py-2">Create</button>
-                            </a>
-
+                            <button type="submit" class="btn btn-primary px-4 py-2">Create</button>
                         </div>
 
 
@@ -170,7 +170,7 @@
         </div>
 
     </div>
-   
+
 
 </body>
 

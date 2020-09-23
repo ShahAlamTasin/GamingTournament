@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -48,17 +49,34 @@ namespace GameTournament.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Competitionid,organizeremail,Organizerid,totalteams,Registrationfee,Registeredteams,competitionpicture,tournamentdeadline,Discordserverlink,googleformlink,status")] Competition competition)
+        public ActionResult Create([Bind(Include = "")] Competition competition)
         {
-            if (ModelState.IsValid)
+            string fileDir = "~/Content/Upload/";
+            if (Request.Files.Count > 0)
             {
-                db.Competition.Add(competition);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                var file = Request.Files[0];
+                
+                if (file != null && file.ContentLength > 0)
+                {
+                    
+                    var ext = Path.GetExtension(file.FileName);
+                    var fileName = competition.CompetitionName + ""+ext;
+                    var path = Path.Combine(Server.MapPath("~/Content/Upload/"), fileName);
+                    fileDir += fileName;
+                    file.SaveAs(path);
+                }
             }
+            competition.competitionpicture = fileDir;
+            competition.status = 1;
+                db.Competition.Add(competition);
+            db.SaveChanges();
+            
 
-            ViewBag.Organizerid = new SelectList(db.Organizer, "Organizerid", "organizername", competition.Organizerid);
-            return View(competition);
+            return RedirectToAction("Index","Competition",new { id = competition.Organizerid });
+
+            
+            ViewBag.Organizerid = new SelectList(db.Organizer, "Organizerid", "organizeremail", competition.Organizerid);
+            return View("~/Views/Home/Competitonorganization.cshtml", competition);
         }
 
         // GET: Competitions/Edit/5

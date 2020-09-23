@@ -77,59 +77,62 @@
                 </h1>
 
                 <div class="container">
-                    <form>
+
+
+
+
+
+
+
+
+
+                    <form action="@Url.Action("Create","Gamers")" method="POST" >
+
+                        @Html.AntiForgeryToken()
+
                         <div class="form-group">
                             <label for="fname">Name  :</label>
-                            <input type="text" class="form-control" id="Gamernameinput" name="Name" aria-describedby="emailHelp" placeholder="Enter Name">
-
+                            <input type="text" class="form-control" id="Gamernameinput" name="GamerName" aria-describedby="emailHelp" placeholder="Enter Name">
+                            @Html.ValidationMessageFor(model => model.GamerName, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
                             <label for="E-mail">E-mail  :</label>
                             <input type="email" class="form-control" id="Gamermailinput" name="Email" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
                             <label for="InGameName">In Game Name :</label>
-                            <input type="text" class="form-control" id="gameringamename" name="Ingamename" aria-describedby="emailHelp" placeholder="enter in game name">
-                            <small id="NameHelp" class="form-text text-muted">We'll never share your In Game Name with anyone else.</small>
+                            <input type="text" class="form-control" id="gameringamename" name="InGameName" aria-describedby="emailHelp" placeholder="enter in game name">
+                            @Html.ValidationMessageFor(model => model.InGameName, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
                             <label for="GamerNumber">Contact Number :</label>
-                            <input type="tel" class="form-control" id="Gamercontactinput" name="Contactnum" aria-describedby="emailHelp" placeholder="enter contact number">
-                            <small id="NumberHelp" class="form-text text-muted">We'll never share your Number with anyone else.</small>
+                            <input type="tel" class="form-control" id="Gamercontactinput" name="ContactNumber" aria-describedby="emailHelp" placeholder="enter contact number">
+                            @Html.ValidationMessageFor(model => model.ContactNumber, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group">
                             <label for="lname">Passward :</label>
-                            <input type="password" class="form-control" id="Gamerpassinput" name="Password" aria-describedby="emailHelp" placeholder="enter passward">
-                            <small id="PasswardHelp" class="form-text text-muted">We'll never share your Passward with anyone else.</small>
+                            <input type="password" class="form-control" id="Gamerpassinput" name="Passward" aria-describedby="emailHelp" placeholder="enter passward">
+                            @Html.ValidationMessageFor(model => model.Passward, "", new { @class = "text-danger" })
                         </div>
                         <div class="form-group">
                             <label for="lname">Team Name :</label>
                             <input type="text" class="form-control" id="Gamerteamnameinput" name="Teamname" aria-describedby="emailHelp" placeholder="enter team name">
-
+                            @Html.ValidationMessageFor(model => model.Teamname, "", new { @class = "text-danger" })
                         </div>
 
-                        
                         <div class="form-group">
-                            <label for="E-mail">Preffred Game :</label> <br>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="prefferedgame" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Pubg Mobile
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="">
-                                    <a class="dropdown-item" href="#">Apex</a>
-                                    <a class="dropdown-item" href="#">Pubg Mobile</a>
-                                    <a class="dropdown-item" href="#">Valorent</a>
-                                    <a class="dropdown-item" href="#">Fortnite</a>
-
-                                </div>
-                            </div>
+                            <select name="Prefferedgame" id="Prefferedgame">
+                                <option value="Apex">Apex</option>
+                                <option value="Pubg Mobile">Pubg Mobile</option>
+                                <option value="Valorent">Valorent</option>
+                                <option value="Fortnite">Fortnite</option>
+                            </select>
                         </div>
-
 
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
@@ -139,6 +142,7 @@
 
 
                     </form>
+
 
                 </div>
 

@@ -10,7 +10,8 @@ namespace GameTournament.Controllers
 
     public class HomeController : Controller
     {
-       
+
+        private DatabaseContext db = new DatabaseContext();
         public ActionResult Index()
         {
             return View();
@@ -40,7 +41,6 @@ namespace GameTournament.Controllers
             return View();
         }
 
-        [HttpPost]
         
         public ActionResult OrganizerRegistration()
         {
@@ -50,9 +50,14 @@ namespace GameTournament.Controllers
         {
             return View();
         }
-        public ActionResult Organizerprofileview()
+        public ActionResult Organizerprofileview(int id)
         {
-            return View();
+            Organizer organizer = db.Organizer.Find(id);
+            if (organizer == null)
+            {
+                return HttpNotFound();
+            }
+            return View(organizer);
         }
 
         public ActionResult GiveReview()
@@ -60,13 +65,19 @@ namespace GameTournament.Controllers
             return View();
         }
 
-        public ActionResult ProfileView()
+        public ActionResult ProfileView(int id)
         {
-            return View();
+            Gamer gamer = db.Gamers.Find(id);
+            if (gamer == null)
+            {
+                return HttpNotFound();
+            }
+            return View(gamer);
         }
        
-            public ActionResult Competitonorganization()
+         public ActionResult Competitonorganization()
         {
+            ViewBag.Organizerid = new SelectList(db.Organizer, "Organizerid", "organizeremail");
             return View();
         }
     }

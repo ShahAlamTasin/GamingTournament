@@ -1,4 +1,4 @@
-﻿
+﻿@model GameTournament.Models.Organizer
 @{
     ViewBag.Title = "OrganizerRegistration";
     Layout = null;
@@ -76,33 +76,34 @@
                 </h1>
 
                 <div class="container mt-5 pt-5">
-                    <form>
+                    <form action="@Url.Action("Create","Organizers")" method="post">
+                        @Html.AntiForgeryToken()
                         <div class="form-group mb-4">
                             <label for="fname">Name  :</label>
-                            <input type="text" class="form-control" id="organizernameinput" aria-describedby="emailHelp" placeholder="Enter Name">
-
+                            <input type="text" class="form-control" name="organizername" id="organizernameinput" aria-describedby="emailHelp" placeholder="Enter Name">
+                            @Html.ValidationMessageFor(model => model.organizername, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group mb-4">
                             <label for="E-mail">E-mail  :</label>
-                            <input type="email" class="form-control" id="organizermailinput" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="email" class="form-control" name="Organizeremail" id="organizermailinput" aria-describedby="emailHelp" placeholder="Enter email">
+                            @Html.ValidationMessageFor(model => model.Organizeremail, "", new { @class = "text-danger" })
                         </div>
 
-                        
+
 
                         <div class="form-group mb-4">
                             <label for="OrganizerNumber">Contact Number :</label>
-                            <input type="tel" class="form-control" id="organizernumberinput" aria-describedby="emailHelp" placeholder="enter contact number">
-                            <small id="NumberHelp" class="form-text text-muted">We'll never share your Number with anyone else.</small>
+                            <input type="tel" class="form-control" name="organizercontactnum" id="organizernumberinput" aria-describedby="emailHelp" placeholder="enter contact number">
+                            @Html.ValidationMessageFor(model => model.organizercontactnum, "", new { @class = "text-danger" })
                         </div>
 
                         <div class="form-group mb-4">
                             <label for="lname">Passward :</label>
-                            <input type="password" class="form-control" id="organizerpassinput" aria-describedby="emailHelp" placeholder="enter passward">
-                            <small id="PasswardHelp" class="form-text text-muted">We'll never share your Passward with anyone else.</small>
+                            <input type="password" class="form-control" name="Passward" id="organizerpassinput" aria-describedby="emailHelp" placeholder="enter passward">
+                            @Html.ValidationMessageFor(model => model.Passward, "", new { @class = "text-danger" })
                         </div>
-                      
+
 
                         <div class="text-center mb-4">
                             <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>

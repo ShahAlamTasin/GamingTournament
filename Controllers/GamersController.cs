@@ -46,16 +46,16 @@ namespace GameTournament.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GamerId,GamerName,Email,ContactNumber,Passward,InGameName,Teamname,Prefferedgame")] Gamer gamer)
+        public ActionResult Create([Bind(Include = "")] Gamer gamer)
         {
             if (ModelState.IsValid)
             {
                 db.Gamers.Add(gamer);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ProfileView","Home" , new { id = gamer.GamerId });
             }
 
-            return View(gamer);
+            return View("~/Views/Home/GamerRegistration.cshtml", gamer);
         }
 
         // GET: Gamers/Edit/5
@@ -78,7 +78,7 @@ namespace GameTournament.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GamerId,GamerName,Email,ContactNumber,Passward,InGameName,Teamname,Prefferedgame")] Gamer gamer)
+        public ActionResult Edit([Bind(Include = "")] Gamer gamer)
         {
             if (ModelState.IsValid)
             {

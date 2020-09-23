@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameTournament.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,19 +9,28 @@ namespace GameTournament.Controllers
 {
     public class CompetitionController : Controller
     {
+        private DatabaseContext db = new DatabaseContext();
         // GET: Competition
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            IEnumerable<Competition> data = db.Competition.Where(u => u.Organizer.Organizerid == id);
+            return View(data.ToList());
         }
         
-            public ActionResult SeeCompetitonDetails()
+         public ActionResult SeeCompetitonDetails(int id)
         {
-            return View();
+            Competition data = db.Competition.Find(id);
+            if (data == null)
+            {
+                return HttpNotFound(); 
+            }
+            System.Diagnostics.Debug.WriteLine(data.CompetitionName);
+            return View(data);
         }
-        public ActionResult SeeCompetitionDetailsGamer()
+        public ActionResult SeeCompetitionDetailsGamer(int id)
         {
-            return View();
+            Competition data = db.Competition.Find(id);
+            return View(data);
         }
     }
 }

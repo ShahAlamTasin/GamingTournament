@@ -1,4 +1,5 @@
-﻿@{
+﻿@model GameTournament.Models.Gamer
+@{
     ViewBag.Title = "ProfileView";
     Layout = null;
 }
@@ -90,40 +91,60 @@
 
                             <td> Name</td>
 
-                            <td> </td>
+                            <td>  @Html.DisplayFor(model => model.GamerName) </td>
 
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Email</td>
-                            <td> </td>
+                            <td>  @Html.DisplayFor(model => model.Email) </td>
 
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Contact Number</td>
-                            <td> </td>
+                            <td>  @Html.DisplayFor(model => model.ContactNumber) </td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
                             <td>In Game Name</td>
-                            <td> </td>
+                            <td>  @Html.DisplayFor(model => model.InGameName) </td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
                             <td>Team Name</td>
-                            <td> </td>
+                            <td>  @Html.DisplayFor(model => model.Teamname) </td>
                         </tr>
                         <tr>
                             <th scope="row">6</th>
 
                             <td>Rating</td>
                             <td>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                @{
+                                    int rating = Convert.ToInt32(Model.rating);
+                                    int reviewMenber = Convert.ToInt32(Model.reviewmember);
+                                    int totalReview = 0;
+                                    if (reviewMenber != 0)
+                                    {
+                                        totalReview = rating / reviewMenber;
+                                    }
+
+                                }
+                                @totalReview
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    if (totalReview < i)
+                                    {
+                                        <span class="fa fa-star"></span>
+                                    }
+                                    else
+                                    {
+                                        <span class="fa fa-star checked"></span>
+
+                                    }
+                                }
+
+
 
 
                             </td>
@@ -137,14 +158,14 @@
                 </table>
 
                 <div class="text-center">
-                    <a href="">
+                    <a href="@Url.Action("Index","Competition")">
                         <button type="submit" class="btn btn-primary px-4 py-2"> See Competition </button>
                     </a>
                     <a href="">
                         <button type="submit" class="btn btn-primary px-4 py-2"> Review </button>
                     </a>
                 </div>
-               
+
 
 
             </div>

@@ -1,4 +1,7 @@
-﻿
+﻿@model GameTournament.Models.Competition
+
+
+
 @{
     ViewBag.Title = "SeeCompetitonDetails";
     Layout = null;
@@ -76,7 +79,8 @@
             <div class="col-sm-5  ">
 
                 <div class="addimage mb-3">
-                    <img src="/Content/image/pubg 2.jpg" class="d-block w-100 " alt="..." height="300px">
+                    @*@{ var img = Html.DisplayFor(model => model.competitionpicture)}*@
+                    <img src="@Url.Content(Model.competitionpicture)" class="d-block w-100 " alt="..." height="300px">
 
                 </div>
 
@@ -85,7 +89,7 @@
                     <form>
                         <div class="form-group">
                             <label for="fname">Competition Name  :</label> <br>
-                            <label for="fname"></label>
+                           <label for="fname"> @Html.DisplayFor(model => model.CompetitionName)</label>
                             @*<input type="text" class="form-control" id="showcompetitioname" aria-describedby="emailHelp" placeholder="">*@
 
                         </div>
@@ -144,24 +148,24 @@
 
                         </div>
 
-               
 
 
 
 
 
-                <div class="text-center">
-                    <a href="">
-                        <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
-                    </a>
+
+                        <div class="text-center">
+                            <a href="">
+                                <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
+                            </a>
+
+                        </div>
+
+
+
+                    </form>
 
                 </div>
-
-
-
-                </form>
-
-            </div>
 
 
 
