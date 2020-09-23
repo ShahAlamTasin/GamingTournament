@@ -18,5 +18,9 @@ namespace GameTournament.Controllers
         {
             return View();
         }
+        public ActionResult SeeCompetitionDetailsGamer()
+        {
+            return View();
+        }
     }
 }

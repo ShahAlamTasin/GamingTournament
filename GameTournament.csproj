@@ -317,6 +317,8 @@
     <Content Include="Views\Competitions\Details.cshtml" />
     <Content Include="Views\Competitions\Edit.cshtml" />
     <Content Include="Views\Competitions\Index.cshtml" />
+    <Content Include="Views\Competition\SeeCompetitionDetailsGamer.cshtml" />
+    <Content Include="Views\Home\GiveReview.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="databaseContext\" />

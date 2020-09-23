@@ -54,8 +54,13 @@ namespace GameTournament.Controllers
         {
             return View();
         }
+
+        public ActionResult GiveReview()
+        {
+            return View();
+        }
         
-        
+
             public ActionResult Competitonorganization()
         {
             return View();

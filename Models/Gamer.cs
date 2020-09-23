@@ -28,7 +28,12 @@ namespace GameTournament.Models
         [Required]
         public string Prefferedgame { get; set; }
 
-        
+        [Required]
+        public int rating { get; set; }
+
+        [Required]
+        public int reviewmember { get; set; }
+
 
 
 

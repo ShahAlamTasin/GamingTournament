@@ -124,28 +124,37 @@
                         <div class="form-group">
                             <label for="lname">Discord Server Link :</label>
                             <input type="text" class="form-control" id="competitionserverlinkinput" aria-describedby="emailHelp" placeholder="enter discord server link">
-                            <small id="PasswardHelp" class="form-text text-muted">We'll never share your Discord server Link with anyone else.</small>
+                            <small id="PasswardHelp" class="form-text text-muted">We'll share your Discord server Link with Gamers</small>
                         </div>
 
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile" accept="image/*">
-                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        <div class="form-group">
+                             <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile" accept="image/*">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+
+
+                            <script>
+                                // Add the following code if you want the name of the file appear on select
+                                $(".custom-file-input").on("change", function () {
+                                    var fileName = $(this).val().split("\\").pop();
+                                    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                                });
+                            </script>
                         </div>
-                    
-
-                    <script>
-                        // Add the following code if you want the name of the file appear on select
-                        $(".custom-file-input").on("change", function () {
-                            var fileName = $(this).val().split("\\").pop();
-                            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-                        });
-                    </script>
 
 
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
 
-                    </div>
+
+                       
+
+
+                        <div class="text-center mb-2">
+                            <a href="">
+                                <button type="submit" class="btn btn-primary px-4 py-2">Create</button>
+                            </a>
+
+                        </div>
 
 
 
