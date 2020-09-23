@@ -23,6 +23,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            
         }
     </style>
 </head>
@@ -70,12 +71,12 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-5 my-auto ">
+            <div class="col-sm-5 my-auto bg-dark " style="color:white">
                 <h1 id="header_tag" class="text-center">
                     You Will be Signed In As Organizer
                 </h1>
 
-                <div class="container mt-5 pt-5">
+                <div class="container mt-5 pt-5 bg-dark">
                     <form action="@Url.Action("Create","Organizers")" method="post">
                         @Html.AntiForgeryToken()
                         <div class="form-group mb-4">
