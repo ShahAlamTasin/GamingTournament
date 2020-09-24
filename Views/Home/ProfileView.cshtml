@@ -48,10 +48,10 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/Content/image/pubg 1.jpg" class="d-block w-100 " alt="..." style="height:100vh">
+                            <img src="~/Content/image/apexgroup.jpg" class="d-block w-100 " alt="..." style="height:100vh">
                         </div>
                         <div class="carousel-item">
-                            <img src="/Content/image/pubg 2.jpg" class="d-block w-100 " alt="..." style="height:100vh">
+                            <img src="~/Content/image/fortnite 3.jpg" class="d-block w-100 " alt="..." style="height:100vh">
                         </div>
                         <div class="carousel-item">
                             <img src="/Content/image/viper.jpg" class="d-block w-100 " alt="..." style="height:100vh">
@@ -73,7 +73,7 @@
             <div class="col-sm-5 my-auto  mb-2 ">
 
                 <h1 id="header_tag" class="text-center" style="color:white">
-                    Signed In As Organizer
+                    Signed In As Gamer
                 </h1>
                 <table class="table table-striped"style="color:white">
                     <thead>
@@ -158,11 +158,14 @@
                 </table>
 
                 <div class="text-center">
-                    <a href="@Url.Action("Index","Competition")">
+                    <a href="@Url.Action("GamerCompitionList","Home")">
                         <button type="submit" class="btn btn-primary px-4 py-2"> See Competition </button>
                     </a>
-                    <a href="">
+                    <a href="@Url.Action("GiveReview","Home")">
                         <button type="submit" class="btn btn-primary px-4 py-2"> Review </button>
+                    </a>
+                    <a href="@Url.Action("Logout","Home")">
+                        <button type="submit" class="btn btn-primary px-4 py-2"> Logout </button>
                     </a>
                 </div>
 

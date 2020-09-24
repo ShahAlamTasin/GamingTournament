@@ -50,9 +50,14 @@ namespace GameTournament.Controllers
         {
             if (ModelState.IsValid)
             {
+                bool isEmail = db.Gamers.Any(u => u.Email == gamer.Email);
+                if (isEmail)
+                {
+                    return Content("Already have this E-mail in gamer list!!!");
+                }
                 db.Gamers.Add(gamer);
                 db.SaveChanges();
-                return RedirectToAction("ProfileView","Home" , new { id = gamer.GamerId });
+                return RedirectToAction("Login", "Home" , new { id = gamer.GamerId });
             }
 
             return View("~/Views/Home/GamerRegistration.cshtml", gamer);

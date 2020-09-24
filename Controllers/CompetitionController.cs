@@ -30,6 +30,11 @@ namespace GameTournament.Controllers
         public ActionResult SeeCompetitionDetailsGamer(int id)
         {
             Competition data = db.Competition.Find(id);
+            if (data == null)
+            {
+                return HttpNotFound();
+            }
+            System.Diagnostics.Debug.WriteLine(data.CompetitionName);
             return View(data);
         }
     }

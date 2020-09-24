@@ -71,18 +71,17 @@
 
         <h1> Welcome To Gaming Competition Notifier System </h1>
         <div class="formdiv">
-            <form action="">
+            <form action="@Url.Action("LoginFormSubmit","Home")" method="post">
                 <label for="User">Login As:</label>
-                <select name="User " id="User">
-                    <option value="Gamer">Gamer</option>
-                    <option value="Organizer">Organizer</option>
-
+                <select name="UserType" id="User">
+                    <option value="gamer">Gamer</option>
+                    <option value="organizer">Organizer</option>
                 </select>
                 <br><br>
                 <label for="fname">User Mail:</label><br>
-                <input type="Mail" id="User mail" name="User Mail" value=""><br>
+                <input type="email" id="User mail" name="email" value=""><br>
                 <label for="lname">Passward:</label><br>
-                <input type="text" id="Userpass" name="Userpass" value=""><br><br>
+                <input type="password" id="Userpass"  name="password"  value=""><br><br>
                 <button class="Submit" style="background: transparent;">Submit  </button>
            
                 <br> <br>

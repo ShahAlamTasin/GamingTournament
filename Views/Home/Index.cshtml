@@ -41,7 +41,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <div class="container-fluid" style="height:100vh">
-        <div class="row bg-transparent" style="height:100vh">
+        <div class="row bg-dark" style="height:100vh">
             <div class="col-sm-7" style="padding:0">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:100vh">
                     <ol class="carousel-indicators">
@@ -73,50 +73,35 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-5 my-auto ">
+            <div class="col-sm-5 my-auto "style="color:white">
                 <h1 id="header_tag" class="text-center">
                     You Will be Signed In As Organizer Gamer
                 </h1>
 
                 <div class="container">
-                    <form>
-                        <div class="form-group">
-                            <label for="fname">Select Your Role :</label> <br>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="roledropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Organizer
-                                </button>
-                                <div class="dropdown-menu"  aria-labelledby="">
-                                    <a class="dropdown-item" href="#">Organizer</a>
-                                    <a class="dropdown-item" href="#">Gamer</a>
+                    <div class="row my-4">
+                        <div class="col-md-12 text-center">
+                            <a href="@Url.Action("Login", "Home")">
+                                <button class="btn btn-primary" width="100px"> Login as a Gamer or Organizer </button>
 
-                                </div>
-                            </div>
-
+                            </a>
                         </div>
-
-                        <div class="form-group">
-                            <label for="E-mail">Select Login or Signup :</label> <br>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="loginorsignup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Sign up
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="">
-                                    <a class="dropdown-item" href="#">Login</a>
-                                    <a class="dropdown-item" href="#">Sign up</a>
-
-                                </div>
-                            </div>
+                       
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-md-6 mt-3">
+                            <a href="@Url.Action("GamerRegistration", "Home")">
+                                <button class="btn btn-primary"> Sign UP as a Gamer </button>
+                            </a>
+                            
                         </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
-
+                        <div class="col-md-6 mt-3">
+                            <a href="@Url.Action("OrganizerRegistration", "Home")">
+                                <button class="btn btn-primary"> Sign UP as an Organizer  </button>
+                            </a>
+                           
                         </div>
-
-
-
-                    </form>
+                    </div>
 
                 </div>
 

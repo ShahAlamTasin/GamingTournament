@@ -50,9 +50,14 @@ namespace GameTournament.Controllers
         {
             if (ModelState.IsValid)
             {
+                bool isEmail = db.Organizer.Any(u => u.Organizeremail == organizer.Organizeremail);
+                if (isEmail)
+                {
+                    return Content("Already have this E-mail in Organizer list!!!");
+                }
                 db.Organizer.Add(organizer);
                 db.SaveChanges();
-                return RedirectToAction("Organizerprofileview", "Home", new { id = organizer.Organizerid });
+                return RedirectToAction("Login", "Home", new { id = organizer.Organizerid });
             }
 
             return View("~/Views/Home/OrganizerRegistration.cshtml", organizer);

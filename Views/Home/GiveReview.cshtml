@@ -39,7 +39,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <div class="container-fluid" style="height:100vh">
-        <div class="row bg-transparent" style="height:100vh">
+        <div class="row bg-dark" style="height:100vh">
             <div class="col-sm-7" style="padding:0">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:100vh">
                     <ol class="carousel-indicators">
@@ -52,13 +52,13 @@
                             <img src="/Content/image/pubg 1.jpg" class="d-block w-100 " alt="..." style="height:100vh">
                         </div>
                         <div class="carousel-item">
-                            <img src="/Content/image/pubg 2.jpg" class="d-block w-100 " alt="..." style="height:100vh">
+                            <img src="~/Content/image/fortnite 3.jpg" class="d-block w-100 " alt="..." style="height:100vh">
                         </div>
                         <div class="carousel-item">
-                            <img src="/Content/image/viper.jpg" class="d-block w-100 " alt="..." style="height:100vh">
+                            <img src="~/Content/image/sage.jpg" class="d-block w-100 " alt="..." style="height:100vh">
                         </div>
                         <div class="carousel-item">
-                            <img src="/Content/image/fortnite.jpg" class="d-block w-100 " alt="..." style="height:100vh">
+                            <img src="~/Content/image/pubg3.jpg" class="d-block w-100 " alt="..." style="height:100vh">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -71,51 +71,39 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-5 my-auto ">
+            <div class="col-sm-5 my-auto "style="color:white">
                 <h1 id="header_tag" class="text-center">
                    Your reviewes are importent for us 
                 </h1> <br>
 
                 <div class="container">
-                    <form>
+                    <form action="@Url.Action("GiveReviewForm","Home")" method="post">
 
 
                         <div class="form-group">
                             <label for="E-mail">Whom you want to complain</label>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="organizerRating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Gamer
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="">
-                                    <a class="dropdown-item" href="#">Organizer</a>
-                                    <a class="dropdown-item" href="#">Gamer</a>
-
-
-                                </div>
-                            </div>
-
+                           
+                            <select name="type" id="Prefferedgame">
+                                <option value="Organizer">Organizer</option>
+                                <option value="Gamer">Gamer</option>
+                            </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="E-mail">E-mail  :</label>
-                            <input type="email" class="form-control" id="Complain Email input" name="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="GamerNumber">Email :</label>
+                            <input type="email" name="email" class="form-control" id="Gamercontactinput" aria-describedby="emailHelp" placeholder="Enter Email">
+
                         </div>
 
-                        <div class="form-group">
-                            <label for="E-mail">Give Rating :</label>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="organizerRating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    5
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="">
-                                    <a class="dropdown-item" href="#">1</a>
-                                    <a class="dropdown-item" href="#">2</a>
-                                    <a class="dropdown-item" href="#">3</a>
-                                    <a class="dropdown-item" href="#">4</a>
-                                    <a class="dropdown-item" href="#">5</a>
 
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <select name="rating" id="Prefferedgame">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
 
                         <div class="text-center">

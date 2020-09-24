@@ -213,6 +213,9 @@
     <Compile Include="Models\Gamer.cs" />
     <Compile Include="Models\Organizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\AppDatabase.cs" />
+    <Compile Include="Utils\AuthUser.cs" />
+    <Compile Include="Utils\UserAuthrization.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\GAMINGTOURNAMENT.mdf" />
@@ -233,18 +236,28 @@
     <Content Include="Content\css\profileview.css" />
     <Content Include="Content\css\registration.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\image\apex11.jpg" />
+    <Content Include="Content\image\apex22.png" />
     <Content Include="Content\image\apexgroup.jpg" />
+    <Content Include="Content\image\cod tournament.jpeg" />
     <Content Include="Content\image\fortnite 1.jpg" />
     <Content Include="Content\image\fortnite 3.jpg" />
     <Content Include="Content\image\fortnite.jpg" />
+    <Content Include="Content\image\LOL 2.jpg" />
+    <Content Include="Content\image\LOL gamer.jpg" />
+    <Content Include="Content\image\lol3.jpg" />
     <Content Include="Content\image\omen.jpg" />
     <Content Include="Content\image\pic 3.jpg" />
     <Content Include="Content\image\pubg 1.jpg" />
     <Content Include="Content\image\pubg 2.jpg" />
+    <Content Include="Content\image\pubG tournament.png" />
     <Content Include="Content\image\pubg3.jpg" />
     <Content Include="Content\image\rate.jpg" />
     <Content Include="Content\image\reina.jpg" />
     <Content Include="Content\image\sage.jpg" />
+    <Content Include="Content\image\Shroud.jpg" />
+    <Content Include="Content\image\TSM.jpg" />
+    <Content Include="Content\image\valorant tournament.png" />
     <Content Include="Content\image\wallpaper.jpg" />
     <Content Include="Content\js\bootstrap.bundle.js" />
     <Content Include="Content\js\bootstrap.bundle.min.js" />
@@ -319,6 +332,7 @@
     <Content Include="Views\Competitions\Index.cshtml" />
     <Content Include="Views\Competition\SeeCompetitionDetailsGamer.cshtml" />
     <Content Include="Views\Home\GiveReview.cshtml" />
+    <Content Include="Views\Home\GamerCompitionList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Upload\" />

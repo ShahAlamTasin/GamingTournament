@@ -1,0 +1,132 @@
+﻿@model IEnumerable<GameTournament.Models.Competition>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+
+
+
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Album example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,900;1,200;1,400&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="~/Content/css/album.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center" style="background-color: black ">
+            <div class="container" style="color: white">
+                <h1>Here is your organized competetion list </h1>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-dark">
+            <div class="container">
+
+                <div class="row">
+
+                    @foreach (var item in Model)
+                    {
+
+                        <div class="col-md-4 ">
+                            <div class="card mb-4 shadow-sm bg-dark" style="color:white">
+                                <img src="@Url.Content(item.competitionpicture)" width="100%" height="225" />
+
+                                <div class="card-body">
+                                    <label for="lname">Competetion Name :</label>
+                                    <p class="card-text">  @Html.DisplayFor(modelItem => item.CompetitionName) </p><br>
+                                    <label for="lname">Registration Fee :</label>
+                                    <p class="card-text">  @Html.DisplayFor(modelItem => item.Registrationfee) </p><br>
+                                    <label for="lname">Tournament Registration Deadline :</label>
+                                    <p class="card-text">  @Html.DisplayFor(modelItem => item.tournamentdeadline) </p><br>
+
+
+
+                                    @{
+                                        GameTournament.Models.DatabaseContext db = GameTournament.Utils.AppDatabase.getInstence().getDatabase();
+                                        GameTournament.Models.Organizer ratingSee = db.Organizer.Find(item.Organizerid);
+                                        int rating = Convert.ToInt32(ratingSee.rating);
+                                        int reviewMenber = Convert.ToInt32(ratingSee.reviewmember);
+                                        int totalReview = 0;
+                                        if (reviewMenber != 0)
+                                        {
+                                            totalReview = rating / reviewMenber;
+                                        }
+
+                                    }
+                                    <p class="card-text">
+                                        Rating - @totalReview
+                                    </p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a href="@Url.Action("SeeCompetitionDetailsGamer","Competition",new { id =item.Competitionid })">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary bg-light">View</button>
+                                            </a>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                             
+
+                            </div>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>

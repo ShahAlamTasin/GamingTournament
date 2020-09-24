@@ -5,9 +5,11 @@ using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 using GameTournament.Models;
+using GameTournament.Utils;
 
 namespace GameTournament.Controllers
 {
@@ -70,8 +72,19 @@ namespace GameTournament.Controllers
             competition.status = 1;
                 db.Competition.Add(competition);
             db.SaveChanges();
-            
 
+            var client = new SmtpClient("smtp.mailtrap.io", 2525)
+            {
+                Credentials = new NetworkCredential("52989bbb90ab6d", "90b65713e2b630"),
+                EnableSsl = true
+            };
+            IEnumerable<Gamer> allGamer = db.Gamers.ToList();
+            Organizer organizer = AuthUser.getOrganizerUser() ;
+            foreach ( var data in allGamer)
+            {
+                client.Send(organizer.Organizeremail, data.Email, " New Compition ", "Your prefered game compition is created ");
+            }
+            
             return RedirectToAction("Index","Competition",new { id = competition.Organizerid });
 
             
